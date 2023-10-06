@@ -14,11 +14,11 @@ int part_index(int* A, int start, int ends){
     return PIdx;
 }
 
-void Quick_sort(int* A, int start , int ends){
+void quick_sort(int* A, int start , int ends){
     if(start<ends){
         int idx = part_index(A, start, ends);
-        Quick_sort(A, start, idx-1);
-        Quick_sort(A, idx+1, ends);
+        quick_sort(A, start, idx-1);
+        quick_sort(A, idx+1, ends);
     }
 }
 
