@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-int Merge_logic(int* left, int nL, int* right, int nR, int* A, int n){
+int merge_logic(int* left, int nL, int* right, int nR, int* A, int n){
     int i=0, j=0, k=0;
     while(i<nL && j<nR){
         if(left[i] <= right[j]){
